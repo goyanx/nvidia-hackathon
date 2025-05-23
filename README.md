@@ -17,31 +17,7 @@
 <p align="center">
   <iframe width="560" height="315" src="https://youtu.be/eh1zlL_8NwI?si=3JswF5b6vkO2QMW4" frameborder="0" allowfullscreen></iframe>
 </p>
-
 ---
-
-## Dependencies
-
-- ### ollama
-  - download ollama - https://ollama.com/download
-  - pull llava:13b-v1.6
-
-- ### stable-diffusion-webui api
-  - use https://github.com/AUTOMATIC1111/stable-diffusion-webui
-  - use api mode
-
-- ### .Net 
-
-- ### Docker Desktop
-
-- ### microsoft kernel-memory
-```
-docker run -it --rm --name dm -v <your directory>:/qdrant/storage -p 6333:6333 qdrant/qdrant:v1.7.0
-``` 
-
-- ### microsoft kernel-memory-plugin
-  - https://github.com/goyanx/kernel-memory-plugin
-
 ## 🚀 Features
 
 - ### 🗨️ Dynamic Chat System
@@ -71,6 +47,29 @@ docker run -it --rm --name dm -v <your directory>:/qdrant/storage -p 6333:6333 q
   - Supports uploading images for interpretation (e.g., using `llava:13b` via Ollama).
   - Describes scenes, characters, or  content with explicit awareness.
 
+---
+
+## Dependencies
+
+- ### ollama
+  - download ollama - https://ollama.com/download
+  - pull llava:13b-v1.6
+
+- ### stable-diffusion-webui api
+  - use https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  - use api mode
+
+- ### .Net 
+
+- ### Docker Desktop
+
+- ### microsoft kernel-memory
+```
+docker run -it --rm --name dm -v <your directory>:/qdrant/storage -p 6333:6333 qdrant/qdrant:v1.7.0
+``` 
+
+- ### microsoft kernel-memory-plugin
+  - https://github.com/goyanx/kernel-memory-plugin
 
 ---
 
@@ -91,6 +90,22 @@ Copy .env.example to .env
 DISCORD_BOT_TOKEN, OPENAI_API_KEY (Use NVIDIA API KEY), MISTRAL_API_KEY
 
 LLM, LOCAL_SERVER_URL, DISCORD_BOT_WEBHOOK
+
+
+3.1 Run kernel-memory
+```
+docker run -it --rm --name dm -v <your directory>:/qdrant/storage -p 6333:6333 qdrant/qdrant:v1.7.0
+``` 
+
+3.2 Run kernel-memory-plugin
+```
+git clone https://github.com/goyanx/kernel-memory-plugin
+cd kernel-memory-plugin
+dotnet build
+cd azure-function\bin\Debug\net6.0
+func host start -p 7071
+
+```
 
 Invite the bot:
 
