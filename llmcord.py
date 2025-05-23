@@ -34,7 +34,7 @@ LLM_CONFIG = {
     },
     "nvidia": {
         "api_key":  os.environ["NVIDIA_API_KEY"],
-        "base_url": "https://integrate.api.nvidia.com/v1", #"base_url": "https://api.openai.com/v1",
+        "base_url": "https://integrate.api.nvidia.com/v1", 
     },
 }
 API_SERVER_URL = os.environ["API_SERVER_URL"]

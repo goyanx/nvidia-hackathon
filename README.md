@@ -1,10 +1,13 @@
+
+
+
 <h1 align="center">
   Golem Dungeon Master
 </h1>
 
-<p align="center">
-  <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
-</p>
+
+![Description of image](dm.png)
+
 
 <h3 align="center"><i>
   Talk to LLMs with your friends — or let a Dungeon Master guide your adventures!
@@ -16,6 +19,28 @@
 </p>
 
 ---
+
+## Dependencies
+
+- ### ollama
+  - download ollama - https://ollama.com/download
+  - pull llava:13b-v1.6
+
+- ### stable-diffusion-webui api
+  - use https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  - use api mode
+
+- ### .Net 
+
+- ### Docker Desktop
+
+- ### microsoft kernel-memory
+```
+docker run -it --rm --name dm -v <your directory>:/qdrant/storage -p 6333:6333 qdrant/qdrant:v1.7.0
+``` 
+
+- ### microsoft kernel-memory-plugin
+  - https://github.com/goyanx/kernel-memory-plugin
 
 ## 🚀 Features
 
@@ -31,7 +56,8 @@
   - Designed for storytelling, roleplay, and long-form memory-based interactions.
 
 - ### 🧠 Memory Integration via function calling
-  - Uses OpenAPI and `/upsert` to store and recall story data like names, dates, and actions.
+  - Uses  `/upsert` to store data like names, dates, and actions.
+  - Uses `/searchmemory` to recall data
 
 - ### 🖼️ Image Generation
   - Automatically generates an image matching the bot’s reply using context and keyword mapping.
@@ -43,7 +69,7 @@
 
 - ### 👁️ Vision Model Support
   - Supports uploading images for interpretation (e.g., using `llava:13b` via Ollama).
-  - Describes scenes, characters, or lewd content with explicit awareness.
+  - Describes scenes, characters, or  content with explicit awareness.
 
 
 ---
