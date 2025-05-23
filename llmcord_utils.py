@@ -280,16 +280,7 @@ async def main():
     asdfasdfasdfsadfasdasd
     sadfsdaf
     asdfasdf
-    Synthia: (i feel... slightly self-conscious) (i am currently at... being looked at by you while wet in the shower) (for my top i am now wearing... nothing) (for my bottom i am now wearing... nothing) (i am doing... smiling)
 
-"Thank you, Jon," I say softly as you comment
-
-(Later on i am going to do... think about how our intimacy relates to our understanding of each other)
-
-sdfsda
-asfasdf
-asdfasdfasdfsadfasd
-asdfasdf
 """
     
     result = await extract_synthia_text(text)
