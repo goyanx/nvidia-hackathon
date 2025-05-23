@@ -22,7 +22,7 @@ logging.basicConfig(
 LLM_CONFIG = {
     "gpt": {
         "api_key": os.environ["OPENAI_API_KEY"],
-        "base_url": "https://api.openai.com/v1",
+        "base_url": "https://integrate.api.nvidia.com/v1",
     },
     "mistral": {
         "api_key": os.environ["MISTRAL_API_KEY"],
@@ -313,7 +313,7 @@ async def on_message(msg):
 
         print(system_prompt)
         async for chunk in await llm_client.chat.completions.create(
-            model="your model",
+            model="deepseek-ai/deepseek-r1-distill-llama-8b",
             
             temperature=0.8,
 
