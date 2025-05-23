@@ -1,5 +1,5 @@
 <h1 align="center">
-  llmcord.py – Dungeon Master Edition
+  Golem Dungeon Master
 </h1>
 
 <p align="center">
@@ -8,10 +8,11 @@
 
 <h3 align="center"><i>
   Talk to LLMs with your friends — or let a Dungeon Master guide your adventures!
+  based from https://github.com/jakobdylanc/discord-llm-chatbot 
 </i></h3>
 
 <p align="center">
-  <img src="https://github.com/jakobdylanc/discord-llm-chatbot/assets/38699060/a9636e09-c89e-42e9-8690-65d52f8236ea" alt="">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/clip/UgkxTzOYJ6OOn1rMD72L0GgLsRXL0VQkTT_v" frameborder="0" allowfullscreen></iframe>
 </p>
 
 ---
